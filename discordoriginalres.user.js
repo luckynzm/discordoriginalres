@@ -12,8 +12,8 @@
 
     var url = document.URL;
     
-if(url.includes("?width=446&height=335")) {
-                var newurl = url.replace("?width=446&height=335",'');
+if(url.includes("?")) {
+                var newurl = url.substring(0, url.indexOf('?'));
                  location.replace(newurl);  
                 }
  
